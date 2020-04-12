@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD9CBEC8-40FB-4E2C-83A3-9645EF8D80E1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>c程序</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <HeapCommitSize>1200000</HeapCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="break.c" />
+    <ClCompile Include="calloc.c" />
+    <ClCompile Include="continue.c" />
+    <ClCompile Include="do-while循环.c" />
+    <ClCompile Include="enum.c" />
+    <ClCompile Include="float输入.c" />
+    <ClCompile Include="for.c" />
+    <ClCompile Include="for循环的灵活性.c" />
+    <ClCompile Include="free.c" />
+    <ClCompile Include="free1.c" />
+    <ClCompile Include="getchar.c" />
+    <ClCompile Include="goto.c" />
+    <ClCompile Include="go跳出多层循环.c" />
+    <ClCompile Include="ifelse条件重复.c" />
+    <ClCompile Include="ifelse注意点.c" />
+    <ClCompile Include="if注意点.c" />
+    <ClCompile Include="if表达式.c" />
+    <ClCompile Include="int深入.c" />
+    <ClCompile Include="int类型变量.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mallo.c" />
+    <ClCompile Include="mallo1.c" />
+    <ClCompile Include="malloc一维数组指针.c" />
+    <ClCompile Include="malloc二维数组指针.c" />
+    <ClCompile Include="malloc注意点.c" />
+    <ClCompile Include="printf.c" />
+    <ClCompile Include="realloc.c" />
+    <ClCompile Include="return返回多个数值.c" />
+    <ClCompile Include="scanf.c" />
+    <ClCompile Include="scanf_s.c" />
+    <ClCompile Include="scanf_s字符串的输入.c" />
+    <ClCompile Include="scanf_test.c" />
+    <ClCompile Include="size_t.c" />
+    <ClCompile Include="switch-case.c" />
+    <ClCompile Include="switch注意点.c" />
+    <ClCompile Include="switch表示范围.c" />
+    <ClCompile Include="test32or64.c" />
+    <ClCompile Include="typedef.c" />
+    <ClCompile Include="while.c" />
+    <ClCompile Include="一维数组与指针.c" />
+    <ClCompile Include="一维数组作为参数.c" />
+    <ClCompile Include="一维数组的空间的申请和释放.c" />
+    <ClCompile Include="中文与字符.c" />
+    <ClCompile Include="二级指针.c" />
+    <ClCompile Include="二级指针的使用.c" />
+    <ClCompile Include="二级指针的具体操作.c" />
+    <ClCompile Include="二维数组.c" />
+    <ClCompile Include="二维数组作为参数.c" />
+    <ClCompile Include="二维数组和指针.c" />
+    <ClCompile Include="二维数组的地址.c" />
+    <ClCompile Include="什么是字符串.c" />
+    <ClCompile Include="其他整形.c" />
+    <ClCompile Include="其他自便运算符.c" />
+    <ClCompile Include="内存管理.c" />
+    <ClCompile Include="函数.c" />
+    <ClCompile Include="函数修改指针变量.c" />
+    <ClCompile Include="函数地址类型.c" />
+    <ClCompile Include="函数申明.c" />
+    <ClCompile Include="参数个数不确定的函数.c" />
+    <ClCompile Include="参数宏的定义.c" />
+    <ClCompile Include="可控循环3要素.c" />
+    <ClCompile Include="地址.c" />
+    <ClCompile Include="基本数据类型的指针.c" />
+    <ClCompile Include="基本类型的内存空间的申请和释放.c" />
+    <ClCompile Include="声明一个结构体类型.c" />
+    <ClCompile Include="多行输入.c" />
+    <ClCompile Include="大小写之间的转换.c" />
+    <ClCompile Include="头文件.c" />
+    <ClCompile Include="字符.c" />
+    <ClCompile Include="字符char.c" />
+    <ClCompile Include="字符串操作函数.c" />
+    <ClCompile Include="字符串数组和二维字符数组.c" />
+    <ClCompile Include="字符串的声明方式.c" />
+    <ClCompile Include="字符串的拼接.c" />
+    <ClCompile Include="字符串的输入.c" />
+    <ClCompile Include="字符数组.c" />
+    <ClCompile Include="字符数组和字符串.c" />
+    <ClCompile Include="字符数组的输出.c" />
+    <ClCompile Include="字符的深入理解.c" />
+    <ClCompile Include="宏定义.c" />
+    <ClCompile Include="宏的注意点.c" />
+    <ClCompile Include="将字符串复制到字符数组中.c" />
+    <ClCompile Include="嵌套循环.c" />
+    <ClCompile Include="常用的字符串操作函数.c" />
+    <ClCompile Include="成绩评级系统.c" />
+    <ClCompile Include="拆分整数.c" />
+    <ClCompile Include="指针.c" />
+    <ClCompile Include="指针与数组的关系.c" />
+    <ClCompile Include="指针修改元素的内容.c" />
+    <ClCompile Include="指针成员和函数成员.c" />
+    <ClCompile Include="指针操作指向的空间.c" />
+    <ClCompile Include="指针数组.c" />
+    <ClCompile Include="指针数组拉链结构.c" />
+    <ClCompile Include="指针类型显式转换.c" />
+    <ClCompile Include="指针类型的转换操作.c" />
+    <ClCompile Include="指针类型的重定义.c" />
+    <ClCompile Include="指针给数组赋值.c" />
+    <ClCompile Include="指针遍历二维数组.c" />
+    <ClCompile Include="数组.c" />
+    <ClCompile Include="数组初始化.c" />
+    <ClCompile Include="数组复制.c" />
+    <ClCompile Include="数组指针.c" />
+    <ClCompile Include="数组最大值.c" />
+    <ClCompile Include="数组的地址.c" />
+    <ClCompile Include="整数.c" />
+    <ClCompile Include="斐波拉切数列.c" />
+    <ClCompile Include="无参数无返回值.c" />
+    <ClCompile Include="无参数有返回值.c" />
+    <ClCompile Include="无符号整形.c" />
+    <ClCompile Include="更改内存空间中的变量的数值.c" />
+    <ClCompile Include="有参数无返回值的函数.c" />
+    <ClCompile Include="有参数有返回值的函数.c" />
+    <ClCompile Include="条件的意义.c" />
+    <ClCompile Include="条件运算符.c" />
+    <ClCompile Include="枚举变量的声明和使用.c" />
+    <ClCompile Include="枚举类型的常量.c" />
+    <ClCompile Include="栈区大小.c" />
+    <ClCompile Include="栈溢出测试.c" />
+    <ClCompile Include="测试.c" />
+    <ClCompile Include="测试大小端存储-union.c" />
+    <ClCompile Include="测试大小端存储.c" />
+    <ClCompile Include="测试自加.c" />
+    <ClCompile Include="浮点型.c" />
+    <ClCompile Include="浮点型后缀.c" />
+    <ClCompile Include="浮点型数据区别.c" />
+    <ClCompile Include="浮点型的精度位.c" />
+    <ClCompile Include="深入指针和下标运算.c" />
+    <ClCompile Include="演示.c" />
+    <ClCompile Include="特殊定义的宏.c" />
+    <ClCompile Include="类型决定指针操作.c" />
+    <ClCompile Include="类型决定指针操作1.cpp" />
+    <ClCompile Include="结构体函数成员.c" />
+    <ClCompile Include="结构体变量的声明和定义.c" />
+    <ClCompile Include="结构体嵌套.c" />
+    <ClCompile Include="结构体数组.c" />
+    <ClCompile Include="结构体的内存大小.c" />
+    <ClCompile Include="结构体访问成员.c" />
+    <ClCompile Include="联合的使用.c" />
+    <ClCompile Include="自减.c" />
+    <ClCompile Include="自增和自减.c" />
+    <ClCompile Include="自定义输出字符串函数.c" />
+    <ClCompile Include="表达式.c" />
+    <ClCompile Include="警告.c" />
+    <ClCompile Include="转义字符.c" />
+    <ClCompile Include="输入字符.c" />
+    <ClCompile Include="输入整形看scanf的原理.c" />
+    <ClCompile Include="运算符.c" />
+    <ClCompile Include="运算符补充.c" />
+    <ClCompile Include="递归函数.c" />
+    <ClCompile Include="通过函数修改外部的数值.c" />
+    <ClCompile Include="逻辑运算符的注意点.c" />
+    <ClCompile Include="非零.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
